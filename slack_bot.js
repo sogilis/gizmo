@@ -98,7 +98,7 @@ controller.hears(['take (.*)'], 'direct_mention', function(bot, message) {
 
 controller.hears(['state'], 'direct_mention', function(bot, message) {
   controller.storage.users.get(message.user, function(err, user) {
-    bot.reply(message, 'Gizmo is own by ' + state + ' !');
+    bot.reply(message, 'Gizmo is owned by ' + state + ' !');
   });
 });
 
