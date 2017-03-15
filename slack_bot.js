@@ -95,8 +95,12 @@ controller.hears(['release'], 'direct_mention', function(bot, message) {
 controller.hears(['take (.*)'], 'direct_mention', function(bot, message) {
   var name = message.match[1];
   controller.storage.users.get(message.user, function(err, user) {
-    state = name
-    bot.reply(message, state + ' has Gizmo !');
+    if (state == 'nobody') {
+      state = name
+      bot.reply(message, state + ' has Gizmo !');
+    } else {
+      bot.reply(message, 'You can\'t do that ! ' state + ' has it !');
+    }
   });
 });
 
