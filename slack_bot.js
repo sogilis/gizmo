@@ -99,7 +99,7 @@ controller.hears(['take (.*)'], 'direct_mention', function(bot, message) {
       state = name
       bot.reply(message, state + ' has Gizmo !');
     } else {
-      bot.reply(message, 'You can\'t do that ! ' state + ' has it !');
+      bot.reply(message, 'You can\'t do that ! ' + state + ' has it !');
     }
   });
 });
