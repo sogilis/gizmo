@@ -72,6 +72,10 @@ if (!process.env.token) {
 var Botkit = require('./lib/Botkit.js');
 var os = require('os');
 var state = 'nobody';
+var express = require('express');
+var app     = express();
+
+app.listen(process.env.PORT || 5000);
 
 var controller = Botkit.slackbot({
     debug: true,
