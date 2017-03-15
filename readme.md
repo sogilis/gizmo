@@ -1,4 +1,4 @@
-x# [Botkit](http://howdy.ai/botkit) - Building Blocks for Building Bots
+# [Botkit](http://howdy.ai/botkit) - Building Blocks for Building Bots
 
 [![npm](https://img.shields.io/npm/v/botkit.svg)](https://www.npmjs.com/package/botkit)
 [![David](https://img.shields.io/david/howdyai/botkit.svg)](https://david-dm.org/howdyai/botkit)
